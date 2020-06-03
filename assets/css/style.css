@@ -1,0 +1,151 @@
+    html {
+        font-size: 14px;
+    }
+    @media (min-width: 768px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+    /* fondo cuerpo */
+    body{
+        background: linear-gradient(to right bottom,rgba(0,0,0,0.1) 50%,#fff 50%);
+    }
+    .fondofooter{
+        background: linear-gradient(to right bottom,#fff 50%,#42a89e 50%);
+        /* background: linear-gradient(135deg,#3d7aef,#2b4be4) !important;*/
+        color: #000000; 
+    }
+
+    .fondocontenido{
+        background: url("../../../domcli/assets/images/fondocontenido.png") no-repeat top center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    /* imagen inicio */
+    .box{
+        background-image: url("../../../domcli/assets/images/fondoinicio3.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center, center;
+    }
+
+    /* la aplicación envía mensaje a wpp con el pedido previamente seleccionado en la página
+     */
+
+    .container {
+        max-width: 960px;
+    }
+
+    .pricing-header {
+        max-width: 700px;
+    }
+
+    .card-deck .card {
+        min-width: 220px;
+    }
+    .logo{
+        width: 120px;
+        height: 55px;
+    }
+
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
+    }
+
+    /* Nuevos botones */
+
+    .btn-color1 {
+        color: #fff;
+        background-color: #18a293;
+        border-color: #18a293;
+    }
+      
+    .btn-color1:hover {
+        color: #fff;
+        background-color: #10786d;
+        border-color: #0f6d63;
+    }
+    
+    .btn-color1:focus, .btn-color1.focus {
+        color: #fff;
+        background-color: #10786d;
+        border-color: #0f6d63;
+        box-shadow: 0 0 0 0.2rem rgba(28, 180, 163, 0.5);
+    }
+    
+    .btn-color1.disabled, .btn-color1:disabled {
+        color: #fff;
+        background-color: #18a293;
+        border-color: #18a293;
+    }
+    
+    .btn-color1:not(:disabled):not(.disabled):active, .btn-color1:not(:disabled):not(.disabled).active,
+    .show > .btn-color1.dropdown-toggle {
+        color: #fff;
+        background-color: #10786d;
+        border-color: #0f6d63;
+    }
+    
+    .btn-color1:not(:disabled):not(.disabled):active:focus, .btn-color1:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-color1.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(28, 180, 163, 0.5);
+    }
+    
+    .btn-color2 {
+        color: #fff;
+        background-color: #ff6d00;
+        border-color: #ff6d00;
+    }
+        
+    .btn-color2:hover {
+        color: #fff;
+        background-color: #df6103;
+        border-color: #ca5702;
+    }
+        
+    .btn-color2:focus, .btn-color2.focus {
+        color: #fff;
+        background-color: #df6103;
+        border-color: #ca5702;
+        box-shadow: 0 0 0 0.2rem rgba(218, 95, 4, 0.7);
+    }
+        
+    .btn-color2.disabled, .btn-color2:disabled {
+        color: #fff;
+        background-color: #ff6d00;
+        border-color: #ff6d00;
+    }
+        
+    .btn-color2:not(:disabled):not(.disabled):active, .btn-color2:not(:disabled):not(.disabled).active,
+    .show > .btn-color2.dropdown-toggle {
+        color: #fff;
+        background-color: #df6103;
+        border-color: #ca5702;
+    }
+        
+    .btn-color2:not(:disabled):not(.disabled):active:focus, .btn-color2:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-color2.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(218, 95, 4, 0.7);
+    }
+
+    .masbuscados{
+        border: 2px solid #ff6d00;
+        color: rgb(0, 0, 0);
+        line-height: 55px;
+        width: 250px;
+        margin: 0 auto;
+        font-size: 25px;
+    }

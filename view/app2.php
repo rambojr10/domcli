@@ -9,6 +9,8 @@
 
     <title>Domcli</title>
 
+    <!-- Font Family -->
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.min.css">
     <!-- Style for de home -->
@@ -17,14 +19,35 @@
     <link rel="stylesheet" href="assets/css/steps.css">
     <!-- Fontawesome free -->
     <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!-- Estilos propios del archivo -->
     <style>
-      .display-4{
-        color: #97979b;
+      .dropdown-item:hover{
+        color: #ff6d00;
+      }
+      a.p-2:hover{
+        text-decoration: underline;
+        text-decoration-color: #ff6d00;
+      }
+      .loader{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+        opacity: .8;
+        display: none;
       }
     </style>
+
   </head>
 
   <body>
+    <div class="loader"></div>
     <!-- header -->
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm menu">
       <img src="assets/images/logodomcli.png" class="my-0 mr-md-auto font-weight-normal logo">
@@ -43,10 +66,11 @@
       </nav>
       <a class="btn btn-color2" href="./view/pages/register.php">Registrarse</a>
     </div>
+
     <!-- section 2 -->
     <div class="box container-fluid">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4"">Domcli.com</h1>
+        <h1 class="display-4 animate__animated animate__backInLeft" id="lblTitulo">Domcli.com</h1>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="¿Qué pedirás hoy?" aria-label="Barra de búsqueda" aria-describedby="button-addon2">
           <!-- <div class="input-group-append">
@@ -90,62 +114,17 @@
       </div>
       <br>
     </div> 
+
     <br>
 
-    <!-- section 3 -->
+    <!-- section 3  & contenido principal-->
     <div class="container-fluid fondocontenido">
       <div class="pricing-header pb-md-4 mx-auto text-center">
         <h2 class="masbuscados">Más buscados</h2>
       </div>
 
+      <!-- Contenedor de tarjetas -->
       <div class="container">
-        <!-- <div class="card-deck mb-3 text-center">
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Free</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-          </div>
-          <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-            </div>
-          </div>
-        </div> -->
 
         <!-- fila 1 de tarjeta -->
         <div class="row">
@@ -248,10 +227,9 @@
       </div>
     </div>
 
-    <!-- <hr> -->
-
     <!-- footer -->
     <div class="fondofooter container-fluid">
+      <br>
       <footer>
         <div class="row">
           <div class="col-12 col-md">
@@ -293,10 +271,18 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/js/jquery.js"><\/script>')</script>
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/holder.js"></script>
+
+    <!-- Wow JS -->
+    <script src="assets/plugins/wow/wow.min.js"></script>
+
+    <!--Scripts propios  -->
+      <script type="text/javascript" src="./controller/jscontroller/inicioController.js"></script>
+    <!-- Fin scripts propios -->
+
     <script>
       Holder.addTheme('thumb', {
         bg: '#55595c',

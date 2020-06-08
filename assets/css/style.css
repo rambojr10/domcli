@@ -9,19 +9,21 @@
 
     /* fondo cuerpo */
     body{
-        background: linear-gradient(to right bottom,rgba(0,0,0,0.1) 50%,#fff 50%);
-    }
-    .fondofooter{
-        background: linear-gradient(to right bottom,#fff 50%,#42a89e 50%);
-        /* background: linear-gradient(135deg,#3d7aef,#2b4be4) !important;*/
-        color: #000000; 
+        /* background: linear-gradient(to right bottom,rgba(0,0,0,0.1) 50%,#fff 50%); */
+        background-color: whitesmoke;
     }
 
-    .fondocontenido{
+    .fondofooter{
+        background: linear-gradient(to right bottom,#fff 50%,#42a89e 50%);
+        /* background: linear-gradient(135deg, #3d7aef, #2b4be4) !important;*/
+        color: #000000;         
+    }
+
+    /* .fondocontenido{
         background: url("../../../domcli/assets/images/fondocontenido.png") no-repeat top center;
         background-size: cover;
         background-attachment: fixed;
-    }
+    } */
 
     /* imagen inicio */
     .box{
@@ -66,7 +68,6 @@
     }
 
     /* Nuevos botones */
-
     .btn-color1 {
         color: #fff;
         background-color: #18a293;
@@ -140,12 +141,29 @@
     .show > .btn-color2.dropdown-toggle:focus {
         box-shadow: 0 0 0 0.2rem rgba(218, 95, 4, 0.7);
     }
-
+      
     .masbuscados{
-        border: 2px solid #ff6d00;
+        background-color: #ff6d00;
+        border: 1px solid #fff;
+        color: rgb(255, 255, 255);
+        line-height: 55px;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    .masbuscados:hover{
+        background-color: #fff;
+        border: 1px solid #ff6d00;
         color: rgb(0, 0, 0);
         line-height: 55px;
         width: 250px;
         margin: 0 auto;
-        font-size: 25px;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    #lblTitulo{
+        color: #97979b;
+        font-size: 4rem;
     }

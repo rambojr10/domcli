@@ -1,13 +1,4 @@
-html {
-    -webkit-font-smoothing: antialiased!important;
-    -moz-osx-font-smoothing: grayscale!important;
-    -ms-font-smoothing: antialiased!important;
-  }
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size:16px;
-    color:#555555; 
-  }
+  
   .md-stepper-horizontal {
     display:table;
     width:100%;
@@ -112,7 +103,7 @@ html {
     position:absolute;
     top:36px;
     height:1px;
-    border-top:1px solid #DDDDDD;
+    border-top:1px solid #555; /* or #DDDDDD */
   }
   .md-stepper-horizontal .md-step .md-step-bar-right {
     right:0;

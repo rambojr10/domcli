@@ -6,6 +6,7 @@
   <title>Domcli | Página de registro</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../assets/images/iconodomcli.png">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
@@ -27,8 +28,8 @@
         background: -ms-linear-gradient(left, rgba(255,109,0,1) 0%, rgba(24,162,147,1) 100%);
         background: linear-gradient(to right, rgba(255,109,0,1) 0%, rgba(24,162,147,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6d00', endColorstr='#18a293', GradientType=1 );
-      }
-  </style>
+    }
+</style>
 </head>
 <body class="hold-transition register-page gradient">
     <div class="register-box">
@@ -65,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="input-group mb-2">
                         <input type="password" class="form-control" placeholder="Repetir contraseña">
                         <div class="input-group-append">
                             <div class="input-group-text">
@@ -73,36 +74,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-8">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="agreeTerms" name="terms" value="agree">
-                                <label for="agreeTerms">
-                                    Acepto los <a href="#">términos y condiciones</a>
-                                </label>
+                    <div class="row"> 
+                    <div class="col-12">    
+                            <div class="custom-control custom-switch mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1">Tengo mi negocio</label>
                             </div>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-4">
-                            <button type="submit" class="btn btn-outline-primary btn-block">Registrar</button>
-                        </div>
-                        <!-- /.col -->
                     </div>
-                </form>
-                <hr>
-                <a href="login.html" class="text-center">Ya estoy registrado, ingresar.</a>
-            </div>
-            <!-- /.form-box -->
-        </div><!-- /.card -->
-    </div>
-    <!-- /.register-box -->
-    <div class="container text-center">
-        <a href="#" class="btn btn-outline-light">Volver al inicio</a href="#">
-    </div>
+                  </div>  
+                  <div class="row">
+                    <div class="col-8">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                            <label for="agreeTerms">
+                                Acepto los <a href="#">términos y condiciones</a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-4">
+                        <button type="submit" class="btn btn-outline-primary btn-block">Registrar</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+            <hr>
+            <a href="login.html" class="text-center">Ya estoy registrado, ingresar.</a>
+        </div>
+        <!-- /.form-box -->
+    </div><!-- /.card -->
+</div>
+<!-- /.register-box -->
+<div class="container text-center">
+    <a href="../../index.php" class="btn btn-outline-light">Volver al inicio</a>
+</div>
 
-    <!-- jQuery -->
-    <script src="../../assets/js/jquery.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="../../assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="../../assets/js/jquery.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../assets/js/bootstrap/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

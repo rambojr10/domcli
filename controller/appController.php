@@ -2,9 +2,8 @@
 
     class appController {   
         public function mostrarInicio(){
-            include("view/app2.php");
+            include("view/app.php");
         }
-
     }
     
 ?>

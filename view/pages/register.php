@@ -99,7 +99,7 @@
                 </div>
             </form>
             <hr>
-            <a href="login.html" class="text-center">Ya estoy registrado, ingresar.</a>
+            <a href="login.php" class="text-center">Ya estoy registrado, ingresar.</a>
         </div>
         <!-- /.form-box -->
     </div><!-- /.card -->

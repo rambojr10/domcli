@@ -53,15 +53,15 @@
 </head>
 
 <body class="bg-light">
-    
+
     <!-- <div class="loader"></div> -->
 
     <!-- header -->
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm menu">
-        <img src="assets/images/logodomcli.png" class="my-0 mr-md-auto font-weight-normal logo">
-        <!-- <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5> -->
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 border-bottom menu bg-main" style="border:1px solid #011731 !important;">
+        <!-- <img src="assets/images/logodomcli.png" class="my-0 mr-md-auto logo"> -->
+        <h2 class="my-0 mr-md-auto font-weight-bold text-white">Domcli.com</h2>
         <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#">Nosotros</a>
+            <a class="p-2 text-white" href="#">Nosotros</a>
             <!-- <a class="p-2 text-dark dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Categorías</a>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#"><i class="fas fa-hamburger"></i> Comidas rápidas</a>
@@ -70,18 +70,19 @@
                 <a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Supermercados</a>
                 <div class="dropdown-divider"></div>
             </div> -->
-            <a class="p-2 text-dark" href="./view/pages/login.php">Iniciar Sesión</a>
+            <a class="p-2 text-white" href="./view/pages/login.php">Iniciar Sesión</a>
         </nav>
         <a class="btn btn-color2 sombra mr-2" href="./view/pages/register.php">Registrarse</a>
     </div>
     <!-- end header -->
 
-    <!-- section 2 -->
+    <!-- section 2 - bar search -->
     <div class="box container-fluid">
-        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <div class="px-3 py-3 pt-md-5 pb-md-4 text-center">
             <h1 class="display-4 animate__animated animate__backInLeft" id="lblTitulo">Domcli.com</h1>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
+            <div class="col-lg-7 col-xl-6 col-md-8 col-sm-10 mx-auto p-0">
+                <div class="input-group mb-3 border border-info rounded">
+                    <div class="input-group-prepend">
                     <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
                 </div>
                 <select id="select-beast" required class="demo-default form-control" placeholder="Your city" name="cmbLocation">
@@ -89,7 +90,7 @@
                 </select>
                 <input type="text" class="form-control" placeholder="Buscar...">
                 <div class="input-group-append">
-                    <button class="btn btn-color1">Buscar</button>
+                    <button class="btn btn-color3">Buscar</button>
                 </div>
                 <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <label class="btn btn-color2">
@@ -100,6 +101,7 @@
                     </label>
                 </div> -->
             </div>
+        </div>
         </div>
 
         <!-- step -->
@@ -280,14 +282,14 @@
                     </a>
                 </div>
             </div>
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <div class="d-flex justify-content-between">
                     <h2 class="masbuscados">Más buscados</h2>
                     <h2 class="masbuscados">Más buscados</h2>
                     <h2 class="mejorpuntuacion">Mejor puntuación</h2>
                     <h2 class="mejorpuntuacion">Mejor puntuación</h2>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- end categories -->
 
@@ -300,7 +302,7 @@
             <!-- row 1 business -->
             <div class="row">
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -318,7 +320,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -336,7 +338,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -354,7 +356,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -376,7 +378,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -394,7 +396,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <img src="assets/images/tarjeta3x1.png" alt="Tarjeta3">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
@@ -416,7 +418,7 @@
             <!-- row 2 business -->
             <div class="row">
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -435,7 +437,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -454,7 +456,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <img src="assets/images/tarjeta3x1.png" alt="Tarjeta3">
                         <!-- poner las 2 tarjetas y intercambiar la prop hidden entre ellas de acuerdo al estatus -->
                         <div class="badge-star">
@@ -475,7 +477,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
                         </div>
@@ -494,7 +496,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
                         <div class="badge-star">
                             <span class="stars"><i class="fas fa-star"></i> 4.6</span>
@@ -514,7 +516,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-md-4 col-sm-6 col-6">
-                    <div class="card mb-4 my-card">
+                    <div class="card mb-4 shadow-lg">
                         <img src="assets/images/tarjeta3x1.png" alt="Tarjeta3">
                         <!-- poner las 2 tarjetas y intercambiar la prop hidden entre ellas de acuerdo al estatus -->
                         <div class="badge-star">
@@ -539,85 +541,81 @@
         <!-- end business -->
 
         <!-- slider publicitario -->
-        <div class="mt-4">
+        <!-- <div class="mt-4">
             <h4>Espacio publicitario</h4>
             <hr>
-            <div class="row">
-                <div class="bd-example">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/images/fondoinicio1.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/fondoinicio2.jpg" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/publicidad4.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </div>
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/fondoinicio1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="carousel-item">
+                            <img src="assets/images/fondoinicio2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/publicidad4.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- slider publicitario -->
 
         <!-- featured products -->
         <div class="mt-4">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mb-3">
                 <h4>Productos destacados</h4>
                 <a href="#" class="text-muted align-self-center">Ver más</a>
             </div>
-            <div class="row">
-                <div class="card-group mb-3" style="padding: 1em;">
-                    <div class="card my-card">
-                        <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+            <div class="card-group owl-carousel featured-products">
+                <div class="card border-0">
+                    <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text small-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-muted small-text">Last updated 3 mins ago</p>
                     </div>
-                    <div class="card ml-3 mr-3 my-card">
-                        <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                </div>
+                <div class="card border-0">
+                    <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text small-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-muted small-text">Last updated 3 mins ago</p>
                     </div>
-                    <div class="card my-card">
-                        <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
+                </div>
+                <div class="card border-0">
+                    <img src="assets/images/publisher/publicidad1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text small-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text text-muted small-text">Last updated 3 mins ago</p>
                     </div>
                 </div>
             </div>
@@ -697,6 +695,7 @@
 
     <script>
         $(document).ready(() => {
+
             $('.home-categories').owlCarousel({
                 loop: false,
                 margin: 10,
@@ -717,6 +716,32 @@
                         items: 5,
                     },
                 }
+            })
+
+            $('.featured-products').owlCarousel({
+                loop: true,
+                margin: 12,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                center: true,
+                dots: false,
+                nav: false,
+                // responsive: {
+                //     0: {
+                //         items: 2
+                //     },
+                //     550: {
+                //         items: 3,
+                //     },
+                //     750: {
+                //         items: 4,
+                //     },
+                //     900: {
+                //         items: 5,
+                //     },
+                // }
             })
         })
 
